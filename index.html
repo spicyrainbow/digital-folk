@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<title>Lucy's Home-page</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Lucy's Home-page</title>
     <link rel="stylesheet" href="#">
     <style>
-      
-     
-      
       @font-face {
         src: url(BagelFatOne-Regular.ttf);
         font-family: "Lucy font";
       }
-      
+
       body {
-        background-image: url(bgstar.gif); 
+        background-image: url(bgstar.gif);
         cursor: url(astronoticon.png), auto;
         font-family: "Lucy font", serif;
         letter-spacing: 2px;
-  
-         }
-      
- 				h1{
-       color: rgb(11, 121, 194);
-       font-size: 6vw;
-       text-align: center;
+        margin: 20;
+        height: 100vh;
       }
-      h2{
+
+      * {
+        box-sizing: border-box
+      }
+
+      h1 { 
+        color: rgb(11, 121, 194);
+        font-size: 6vw;
+        text-align: center;
+        background-color: yellow;
+        width: 100vw;
+        height: 50vw;
+        padding-top: 80px;
+        border: 10px solid blue;
+        margin: 200px auto;
+
+      }
+
+      h2 {
         color: hsl(80, 59%, 67%);
         font-size: 2vw;
         text-align: center;
-        
+
       }
-    
+
+      div {
+        background-color: white;
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+      }
+      
+      .red{
+        background-color: red;
+        position: relative;
+        left: 0px;
+        top: 50px;
+          z-index: 1
+      }
+      
     </style>
-	</head>
-	<body>
-    <h1 class="big-yellow">We1c0me T0 The Lucci Univer5e</h1>
+  </head>
+  <body>
+    <div></div>
+    <div class="red"></div>
+    <h1 class="big-yellow">We1c0me T0 The Lucc!v3r5e</h1>
     <h2>by Lucy Huang</h2>
-    <input type="text">
- 
-  
-	</body>
+    <!--     <input type="text"> -->
+
+
+  </body> 
 </html>
