@@ -18,7 +18,7 @@
         margin: 100;
         height: 100vh;
         background-image: url(bgstar.gif);
-                cursor: url(astronoticon.png), auto;
+        cursor: url(astronoticon.png), auto;
         font-family: "Lucy font", serif;
         letter-spacing: 2px;
       }
@@ -29,35 +29,42 @@
         text-align: center;
         /*         background-color: yellow; */
         width: 100vw;
-        height: 50vw;
+        height: 100vw;
         padding-top: 100px;
         /*         border: 10px solid blue; */
         margin: 10px auto;
+        justify-content: center;
       }
 
 
       .skating-girl {
         position: absolute;
-        top: 50vw;
+        width: 30%;
+        align-items: center;
+        top: 50vh;
         right: 15vw;
+
       }
 
       .disco-ball {
         position: absolute;
-        top: 20px;
-        right: 225px;
+        top: 10vh;
+        right: 20vw;
         animation-name: zoom;
         animation-duration: 2s;
         animation-iteration-count: infinite;
+        align-items: center;
       }
-      
+
       @keyframes zoom {
         0% {
           transform: scale(1)
         }
+
         50% {
           transform: scale(2)
         }
+
         100% {
           transform: scale(1)
         }
@@ -77,6 +84,10 @@
         color: hsl(80, 59%, 67%);
         font-size: 2vw;
         text-align: center;
+        width: 100vw;
+        height: 5vh;
+        margin: 5px auto;
+        justify-content: center;
       }
     </style>
   </head>
