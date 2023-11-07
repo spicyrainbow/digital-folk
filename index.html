@@ -40,8 +40,7 @@
       
       .skating-girl {
         position: absolute;
-        width: 30%;
-        align-items: center;
+        width: 20vw;
         top: 100vh;
         right: 23vw;
 
@@ -67,16 +66,24 @@
 
        .draw {
         position: absolute;
-        top: 70vh;
-        left: 50vw;
+        top: calc(50vh - 20px);
+        left: calc(50vw - 96px/2);
         transform: translate(-50%, 0); 
         align-items: center;
        
       }
       
+      @media (min-width: 623px) {
+        .draw{
+         top: calc(50vh + 40px);
+        }
+      }
+
       .marquee {
         color: white;
-      
+      position: absolute;
+        top: calc(50vh - 20px);
+        left: calc(50vw - 96px/2);
       }
       
       @keyframes zoom {
