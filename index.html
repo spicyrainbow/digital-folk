@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+
     <meta charset="utf-8">
     <title>Lucy's Home-page</title>
     <link rel="stylesheet" href="#">
@@ -21,71 +22,89 @@
         cursor: url(wand.png), auto;
         font-family: "Lucy font", serif;
         letter-spacing: 2px;
+        
+      }
+      
+      nav{
+        display: inline-block;
       }
 
-      
       h1 {
-        color: rgb(11, 121, 194);
+        color: hsl(43, 70%, 65%);
         font-size: 8vw;
         text-align: center;
-        /*         background-color: yellow; */
+       
         width: 100vw;
         height: 100vw;
         padding-top: 100px;
-        /*         border: 10px solid blue; */
+        
         margin: 10px auto;
         justify-content: center;
       }
-      
-      
-      .skating-girl {
+
+
+      .teachair {
         position: absolute;
-        width: 20vw;
-        top: 100vh;
-        right: 23vw;
+        height:450px;
+        top: 760px;
+        right: 20vw;
+/*         transform: translate(-50%, 0); */
+        align-items: center;
 
       }
 
       .disco-ball {
+        
         position: absolute;
         top: 10vh;
-        right: 38vw;
+        right: 50vw;
         animation-name: zoom;
         animation-duration: 2s;
         animation-iteration-count: infinite;
+       align-items: center;
+    
+      }
+
+      .noodles {
+        position: absolute;
+        top: 770px;
+        left: 50vw;
+        transform: translate(-50%, 0);
         align-items: center;
       }
       
-      .noodles {
+      .tea {
         position: absolute;
-        top: 90vh;
-        left: 50vw;
-        transform: translate(-50%, 0); 
+        top: 730px;
+        left: 43vw;
+        transform: translate(-50%, 0);
         align-items: center;
       }
 
-       .draw {
+      .table {
         position: absolute;
-        top: calc(50vh - 20px);
+        height: 600px;
+        
+      top: 580px;
         left: calc(50vw - 96px/2);
-        transform: translate(-50%, 0); 
+        transform: translate(-50%, 0);
         align-items: center;
-       
+
       }
-      
+
       @media (min-width: 623px) {
-        .draw{
-         top: calc(50vh + 40px);
+        .draw {
+          top: calc(50vh + 40px);
         }
-      }
+      } */
 
       .marquee {
         color: white;
-      position: absolute;
+        position: absolute;
         top: calc(50vh - 20px);
         left: calc(50vw - 96px/2);
       }
-      
+
       @keyframes zoom {
         0% {
           transform: scale(1)
@@ -113,18 +132,17 @@
         color: hsl(80, 59%, 67%);
         font-size: 2vw;
         text-align: center;
-       width: 100vw;
+        width: 100vw;
         height: 10vw;
         margin: 5px auto;
         justify-content: center;
       }
-      
-      .circle{
-       
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(255,255,255,1) 100%);
-        
+
+      .circle {
+
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
       }
-      
     </style>
   </head>
   <body>
@@ -134,15 +152,23 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(255,255,255,1) 
         T</b><b>o</b><b>
       </b><b>T</b><b>h</b><b>e</b><b></b><b>
         L</b><b>u</b><b>c</b><b>c</b><b>!</b><b>v</b><b>3</b><b>r</b><b>5</b><b>e</b>
+    </h1>
+    <nav>
 
-<img class="skating-girl" src="iceskating.gif" alt="skating-girl">
-    <img class="disco-ball" src="ball.gif" alt="disco-ball">
-    <img class="noodles" src="noodles.gif" alt="noodles">
-    <img class="draw" src="draw.gif" alt="draw">
-        </h1>
+      
+      <img class="disco-ball" src="ball.gif" alt="disco-ball">
+      <img class="table" src="table.png" alt="table">
+      <img class="noodles" src="noodles.gif" alt="noodles">
+      <img class="tea" src="tea1.gif" alt="tea">
+      <img class="teachair" src="teachair.gif" alt="tea">
+      
+    </nav>
+
 
     <h2>by Lucy Huang</h2>
-    <h3><marquee class="marquee">Attetion! N01ses for $2</marquee></h3>
+    <h3>
+      <marquee class="marquee">Attetion! N01ses for $2</marquee>
+    </h3>
     <div>circle</div>
     <!--     <input type="text"> -->
 
