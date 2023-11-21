@@ -28,10 +28,7 @@
         display: inline-block;
       }
 
-      .nav {
-        position: relative;
-        display: inline-block;
-      }
+      
 
       h1 {
         color: hsl(43, 70%, 65%);
@@ -63,26 +60,22 @@
       }
       
       .marquee {
-         color: hsl(320, 69%, 65%);
+         background: 
+           hsl(320, 69%, 65%);
+        color: white;
         font-size: 30px;
          position: absolute;
-       top: 100px;
+       top: 0px;
       }
 
 
-/*       .right-align-container {
-        text-align: right;
-        ma30width: 50px;
-        margin: 5px auto;
-        /* Center the container on the page */
-     
+
 
       .teachair {
         position: absolute;
         height: 450px;
         top: 760px;
-        /*         right: 20vw; */
-        /*         transform: translate(-50%, 0); */
+        
         align-items: center;
         right: calc(0vh + 40vw);
 
@@ -91,8 +84,30 @@
       .disco-ball {
 
         position: absolute;
-        top: 10vh;
+        top: 4vh;
         right: 50vw;
+        animation-name: zoom;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        align-items: center;
+
+      }
+      .disco-ball2 {
+
+        position: absolute;
+        top: 4vh;
+        left: 90vw;
+        animation-name: zoom;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        align-items: center;
+
+      }
+.disco-ball3 {
+
+        position: absolute;
+        top: 4vh;
+        right: 90vw;
         animation-name: zoom;
         animation-duration: 2s;
         animation-iteration-count: infinite;
@@ -128,19 +143,15 @@
 
       }
 
-      @media (min-width: 623px) {
-        .draw {
-          top: calc(50vh + 40px);
-        }
-      }
+     
 
-      */ @keyframes zoom {
+      @keyframes zoom {
         0% {
           transform: scale(1)
         }
 
         50% {
-          transform: scale(2)
+          transform: scale(1.5)
         }
 
         100% {
@@ -187,6 +198,10 @@
 
     <div class="container">
       <img class="disco-ball img-item" src="ball.gif" alt="disco-ball">
+      
+      <img class="disco-ball2 img-item" src="ball.gif" alt="disco-ball">
+      <img class="disco-ball3 img-item" src="ball.gif" alt="disco-ball">
+      
       <img class="table img-item" src="table.png" alt="table">
       <img class="noodles img-item" src="noodles.gif" alt="noodles">
       <img class="tea img-item" src="tea1.gif" alt="tea">
@@ -201,7 +216,7 @@
 
     <h2>By Lucy Huang</h2>
 
-    <marquee class="marquee">Attetion! The Lucci party is abbout to begin</marquee>
+    <marquee class="marquee">Attetion! The Lucci party is about to begin in 3 minutes!!!</marquee>
 
 
     <div>circle</div>
