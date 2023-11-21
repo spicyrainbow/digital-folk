@@ -27,6 +27,11 @@
       nav{
         display: inline-block;
       }
+      
+      .nav {
+      position: relative;
+      display: inline-block;
+    }
 
       h1 {
         color: hsl(43, 70%, 65%);
@@ -42,19 +47,34 @@
         font-family: "Lucy font", serif;
         letter-spacing: 2px;
       }
+      
       h4{
         color: hsl(43, 55%, 65%);
-        font-size: 5vw;
-        
+        font-size: 20px;
+        position: absolute;
+        top: 760px;
+        right: 10vw;
+        text-align: right;
+        max-width: 600px;
+        margin: 0 auto;
       }
+      
+      
+      .right-align-container {
+            text-align: right;
+            max-width: 50px; 
+            margin: 5px auto; /* Center the container on the page */
+        }
+
 
       .teachair {
         position: absolute;
         height:450px;
         top: 760px;
-        right: 35vw;
+/*         right: 20vw; */
 /*         transform: translate(-50%, 0); */
         align-items: center;
+        right: calc(0vh + 40vw);
 
       }
 
@@ -143,12 +163,13 @@
         margin: 5px auto;
         justify-content: center;
       }
+      
+.nav:hover .h4 {
+      opacity: 1;
+    }
 
-      .circle {
 
-        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(255, 255, 255, 1) 100%);
-
-      }
+     
     </style>
   </head>
   <body>
@@ -159,6 +180,8 @@
       </b><b>T</b><b>h</b><b>e</b><b></b><b>
         L</b><b>u</b><b>c</b><b>c</b><b>!</b><b>v</b><b>3</b><b>r</b><b>5</b><b>e</b>
     </h1>
+    
+    <div class="nav">
     <nav>
 
       
@@ -170,14 +193,17 @@
       
     </nav>
 
+</div>
 
     <h2>by Lucy Huang</h2>
     <h3>
       <marquee class="marquee">Attetion! N01ses for $2</marquee>
     </h3>
-    <h4>Heyy, this is Lucy. Welcome to our tea sesh!</h4>
+    <h4>Heyy, this is LucciVerse. Come in to our tea party,
+      get comfy on the chair, sip on some tea and eat some noodle if you're hungry! In Lucciverse, you can be yourself, be crazy, do whatever you want, and just enjoy your time!</h4>
     <div>circle</div>
     <!--     <input type="text"> -->
+    
 
 
   </body>
