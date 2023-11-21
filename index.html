@@ -20,39 +20,39 @@
         height: 100vh;
         background-image: url(bgstar.gif);
         cursor: url(wand.png), auto;
-        
-        
+
+
       }
-      
-      nav{
+
+      nav {
         display: inline-block;
       }
-      
+
       .nav {
-      position: relative;
-      display: inline-block;
-    }
+        position: relative;
+        display: inline-block;
+      }
 
       h1 {
         color: hsl(43, 70%, 65%);
         font-size: 8vw;
         text-align: center;
-       
+
         width: 100vw;
         height: 100vw;
         padding-top: 100px;
-        
+
         margin: 10px auto;
         justify-content: center;
         font-family: "Lucy font", serif;
         letter-spacing: 2px;
       }
-      
+
       h4 {
-        color: hsl(43, 55%, 65%);
+        color: hsl(170, 9%, 100%);
         font-size: 20px;
         position: absolute;
-        top: 760px;
+        top: 830px;
         left: 60vw;
         padding-right: 20px;
         text-align: right;
@@ -62,35 +62,42 @@
         transition: opacity 0.3s ease-in-out;
       }
       
-      
-      .right-align-container {
-            text-align: right;
-            max-width: 50px; 
-            margin: 5px auto; /* Center the container on the page */
-        }
+      .marquee {
+         color: hsl(320, 69%, 65%);
+        font-size: 30px;
+         position: absolute;
+       top: 100px;
+      }
 
+
+/*       .right-align-container {
+        text-align: right;
+        ma30width: 50px;
+        margin: 5px auto;
+        /* Center the container on the page */
+     
 
       .teachair {
         position: absolute;
-        height:450px;
+        height: 450px;
         top: 760px;
-/*         right: 20vw; */
-/*         transform: translate(-50%, 0); */
+        /*         right: 20vw; */
+        /*         transform: translate(-50%, 0); */
         align-items: center;
         right: calc(0vh + 40vw);
 
       }
 
       .disco-ball {
-        
+
         position: absolute;
         top: 10vh;
         right: 50vw;
         animation-name: zoom;
         animation-duration: 2s;
         animation-iteration-count: infinite;
-       align-items: center;
-    
+        align-items: center;
+
       }
 
       .noodles {
@@ -100,7 +107,7 @@
         transform: translate(-50%, 0);
         align-items: center;
       }
-      
+
       .tea {
         position: absolute;
         top: 730px;
@@ -112,9 +119,9 @@
       .table {
         position: absolute;
         height: 600px;
-        
-      top: 580px;
-/*         left: calc(50vw - 96px/2); */
+
+        top: 580px;
+        /*         left: calc(50vw - 96px/2); */
         left: 30vw;
         transform: translate(-50%, 0);
         align-items: center;
@@ -125,16 +132,9 @@
         .draw {
           top: calc(50vh + 40px);
         }
-      } */
-
-      .marquee {
-        color: white;
-        position: absolute;
-        top: calc(50vh - 20px);
-        left: calc(50vw - 96px/2);
       }
 
-      @keyframes zoom {
+      */ @keyframes zoom {
         0% {
           transform: scale(1)
         }
@@ -159,17 +159,20 @@
 
       h2 {
         color: hsl(80, 59%, 67%);
-        font-size: 2vw;
-        text-align: center;
-        width: 100vw;
-        height: 10vw;
+        font-size: 20px;
+        position: absolute;
+        left: calc(50vw - 15px);
+        bottom: 150px;
+
+
         margin: 5px auto;
         justify-content: center;
       }
-      
-.container:hover h4 {
-      opacity: 1;
-    }
+
+      .container:hover h4 {
+        opacity: 1;
+       
+      }
     </style>
   </head>
   <body>
@@ -180,31 +183,30 @@
       </b><b>T</b><b>h</b><b>e</b><b></b><b>
         L</b><b>u</b><b>c</b><b>c</b><b>!</b><b>v</b><b>3</b><b>r</b><b>5</b><b>e</b>
     </h1>
-    
-    
+
+
     <div class="container">
-	 <img class="disco-ball img-item" src="ball.gif" alt="disco-ball">
+      <img class="disco-ball img-item" src="ball.gif" alt="disco-ball">
       <img class="table img-item" src="table.png" alt="table">
       <img class="noodles img-item" src="noodles.gif" alt="noodles">
       <img class="tea img-item" src="tea1.gif" alt="tea">
       <img class="teachair img-item" src="teachair.gif" alt="tea">
-      
-      <h4>Heyy, this is LucciVerse. Come in to our tea party,
-      get comfy on the chair, sip on some tea and eat some noodle if you're hungry! Lucciverse is like Gucci, but better. It is beyond your imagination.You can be yourself, be crazy, be creative, do whatever you want, and just enjoy your time!</h4>
-      
-      
+
+      <h4>Heyyy, this is LucciVerse. Welcome to our tea party,
+        get comfy on the chair, sip on some tea and eat some noodle if you're hungry! Lucciverse is like Gucci, but better. It is beyond your imagination.You can be yourself, be crazy, be creative, do whatever you want, and just enjoy your time here!</h4>
+
     </div>
 
 
 
-    <h2>by Lucy Huang</h2>
-    <h3>
-      <marquee class="marquee">Attetion! N01ses for $2</marquee>
-    </h3>
-    
+    <h2>By Lucy Huang</h2>
+
+    <marquee class="marquee">Attetion! The Lucci party is abbout to begin</marquee>
+
+
     <div>circle</div>
     <!--     <input type="text"> -->
-    
+
 
 
   </body>
